@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="PHP Compare" lan="" version="1.0" date="2025-04-16" compatibility="2.0" installRequired="true">
+	<author name="CaMer0n" url="https://e107.org" />
+	<summary lan="">Compare PHP ini files for migration</summary>
+	<description lan="">Compares the current PHP ini file with another PHP version's ini file to ensure compatibility for PHP upgrades in cPanel/WHM.</description>
+	<keywords>
+		<word>php</word>
+		<word>ini</word>
+		<word>configuration</word>
+		<word>migration</word>
+		<word>compare</word>
+	</keywords>
+	<category>admin</category>
+	<copyright>GNU</copyright>
+	<adminLinks>
+		<link url="admin_config.php" description="Compare PHP ini files for migration" primary="true">LAN_CONFIGURE</link>
+	</adminLinks>
+</e107Plugin>
