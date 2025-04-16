@@ -5,7 +5,14 @@ if(!getperms("P"))
 	e107::redirect("index.php");
 	exit;
 }
-
+ e107::css('inline', "
+ thead {
+ position: sticky !important;
+  top: 50px;
+  z-index: 999;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+ }
+ ");
 
 // Define classes
 class inicompare_adminArea extends e_admin_dispatcher
@@ -207,8 +214,8 @@ class inicompare_admin_ui extends e_admin_ui
                                     <thead>
                                         <tr>
                                             <th>Setting</th>
-                                            <th style="width:25%">Current PHP (' . htmlspecialchars(basename($current_ini)) . ')</th>
-                                            <th style="width:25%">Selected (' . htmlspecialchars(basename($real_selected)) . ')</th>
+                                            <th style="width:25%">Current (PHP ' . PHP_VERSION . ')</th>
+                                            <th style="width:25%">Selected (' . htmlspecialchars($options[$selected_ini]) . ')</th>
                                             <th style="width:25%">Status</th>
                                         </tr>
                                     </thead>
